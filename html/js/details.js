@@ -34,7 +34,6 @@ function createHtml(details) {
         <div class="image" style="background-image: url(${details.drinks[0].strDrinkThumb});"></div></div>
         <div class="features"><h2>Category:</h2> ${details.drinks[0].strCategory}
                              <h2>Glass to serve in:</h2> ${details.drinks[0].strGlass}
-                             <h2>Ingredients:</h2> ${details.drinks[0].strIngredient1}, ${details.drinks[0].strIngredient2}, ${details.drinks[0].strIngredient3}, ${details.drinks[0].strIngredient4}, ${details.drinks[0].strIngredient5}
                              <h2>Instructions to make:</h2> ${details.drinks[0].strInstructions}</div>`;
            
 }
