@@ -26,7 +26,7 @@ function validateForm() {
     }
     else {messageError.style.display = "block";}
 
-    if (validateEmail(email)) {
+    if (validateEmail(email.value) === true) {
         emailError.style.display = "none";
     }
     else {emailError.style.display = "block";}
@@ -45,9 +45,9 @@ function validateLength (value, number) {
 }
 
 function validateEmail (email) {
-    const regEx = /^([a-zA-Z0-9._%-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6})*$/;
-    const patternMatches = regEx.test(email);
-    return patternMatches;
+    const regEx = /\S+@\S+\.\S+/;
+    const emailValid = regEx.test(email);
+    return emailValid;
 }
 
 form.addEventListener("submit", validateForm);
