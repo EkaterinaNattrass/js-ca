@@ -35,5 +35,8 @@ function createHtml(details) {
         <div class="features"><h2>Category:</h2> ${details.drinks[0].strCategory}
                              <h2>Glass to serve in:</h2> ${details.drinks[0].strGlass}
                              <h2>Instructions to make:</h2> ${details.drinks[0].strInstructions}</div>`;
+
+        document.title = details.drinks[0].strDrink;
            
 }
+
